@@ -1,6 +1,6 @@
 /*
 Judul Project : Main Yuk!
-Deskripsi : Main Yuk! adalah sebuah permainan seberapa sayang pacar kita. Main Yuk!
+Deskripsi : Main Yuk! adalah sebuah permainan seberapa sayang kekasih kita. Main Yuk!
             dibuat dengan menggunakan Jquery.
 Pembuat : Muhammad Surya Jayadiprana
 Disclaimer : Tolong jangan hapus bagian ini, karena menandakan anda mengsupport
@@ -12,7 +12,7 @@ $(document).on('click', '#tombolPopup', function (e) {
     e.preventDefault();
     Swal.fire({
         icon: 'info',
-        title: 'Halo Pacarku',
+        title: 'Halo Sayangku',
         text: 'Aku ada pertanyaan nih buat kamu',
         showClass: {
             popup: 'animate__animated animate__tada'
