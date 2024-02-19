@@ -18,7 +18,7 @@ $(document).ready(function () {
     const detik_ = $("#detik");
 
     // Tanggal dan Waktu
-    let ultah = "Apr 12, 2022 00:00:00";
+    let ultah = "Feb 24, 2023 00:00:00";
     let hitungMundur = new Date(ultah).getTime();
     let x = setInterval(function () {
         let sekarang = new Date().getTime();
@@ -39,7 +39,7 @@ $(document).ready(function () {
             $('head').append($('<link rel="stylesheet" type="text/css" />').attr('href', 'asset/style.css'));
             $('.start').click(function () {
                 $('.stage1').fadeOut();
-                fire_modal('asset/img/cake_modal.png', 'Mari buat kue ulang tahun mu!', 'Karena ini ulang tahunmu, pas kalau kamu buat kue ulang tahun secara digital sendiri. Untuk membuat kuenya, mulai dari mengaduk adonan kue yang kamu buat, panggang didalam oven dan terakhir silahkan kamu hias sesuai kemauan kamu. Sebelumnya selamat ulang tahun semoga kamu suka sama hadiahnya!');
+                fire_modal('asset/img/cake_modal.png', 'Yuk racik kuenya!', 'Karena ini ulang tahun ayang, jadi ayang aja yang bikin kuenya yah, mulai?');
             })
 
             progress = 1;
@@ -86,7 +86,7 @@ $(document).ready(function () {
                 }
                 if (mixtimes == 6) {
                     $('.stage2').fadeOut();
-                    fire_modal('asset/img/mix_modal.png', 'Adonan sudah merata!', 'Selamat, adonannya sudah merata! Sekarang mari ketahap pembuatan kue selanjutnya');
+                    fire_modal('asset/img/mix_modal.png', 'Adonan udah merata!', 'Yeay, adonannya udah teraduk! Yuk lanjut ke tahap berikutnya');
 
                 }
 
@@ -98,7 +98,7 @@ $(document).ready(function () {
             $(".oven").droppable({
                 drop: function (event, ui) {
                     $('.stage3').fadeOut();
-                    fire_modal('asset/img/oven_modal.png', 'Berhasil dipanggang!', 'Asik, kamu adalah koki yang hebat. Semuanya sudah terpanggang dengan baik dan adonannya terlihat sangat enak. Sekarang waktunya kamu menghias kue ulang tahun mu dengan menambahkan beberapa hal seperti madu, krim, coklat dll.');
+                    fire_modal('asset/img/oven_modal.png', 'Yeay udah dioven!', 'Asik, Kamu pinter deh. Kuenya keliatan enak. Yuk mulai menghias kue ulang tahun, bisa kamu tambahin madu, krim, coklat dll.');
                 }
             })
 
